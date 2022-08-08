@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section.main {
+  display: flex;
+  flex-direction: column;
+}
+section.main section.form {
+  height: 100vh;
+}
+section.main section.form .form_sec_inner {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  border: none;
+}
+section.main section.form .form_sec_inner .left_side {
+  width: 60%;
+  height: 100vh;
+  border: none;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider {
+  overflow: hidden;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides {
+  display: flex;
+  justify-content: space-between;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides input {
+  display: none;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides .slide {
+  transition: 2s;
+  background-color: #000;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides .slide img {
+  width: 51.3rem;
+  height: 99.3vh;
+  inset-block-start: 4px;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides .navigation_auto {
+  position: absolute;
+  display: flex;
+  margin: 37rem 20rem;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides .navigation_auto div {
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides .navigation_auto div:not(:last-child) {
+  margin-right: 40px;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides #radio1:checked ~ .navigation_auto .auto-btn1 {
+  background-color: #40D3DC;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides #radio2:checked ~ .navigation_auto .auto-btn2 {
+  background-color: #40D3DC;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides #radio3:checked ~ .navigation_auto .auto-btn3 {
+  background-color: #40D3DC;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides #radio4:checked ~ .navigation_auto .auto-btn4 {
+  background-color: #40D3DC;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides .navigation_manual {
+  position: absolute;
+  display: flex;
+  margin: 37rem 20rem;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides .navigation_manual .manual-btn {
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides .navigation_manual .manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides .navigation_manual .manual-btn:hover {
+  background-color: #40D3DC;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides #radio1:checked ~ .first {
+  margin-left: 0;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides #radio2:checked ~ .first {
+  margin-left: -51.3rem;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides #radio3:checked ~ .first {
+  margin-left: -102.6rem;
+}
+section.main section.form .form_sec_inner .left_side .left_side_slider .slides #radio4:checked ~ .first {
+  margin-left: -153.9rem;
+}
+section.main section.form .right_side {
+  background-color: #000;
+  color: #fff;
+  width: 40%;
+  height: 100vh;
+}
+section.main section.form .right_side_inner .logo_sec {
+  margin-top: 1rem;
+}
+section.main section.form .right_side_inner .logo_sec_inner .logo_img img {
+  inset-inline-start: 8.5rem;
+  width: 240px;
+}
+section.main section.form .right_side_inner .right_side_contents {
+  margin-left: 1.5rem;
+}
+section.main section.form .right_side_inner .right_side_contents .right_side_header_text {
+  margin: 2rem 0 1rem 1.5rem;
+  text-align: left;
+  line-height: 1.5rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+section.main section.form .right_side_inner .right_side_contents .right_side_header_text p a {
+  color: white;
+}
+section.main section.form .right_side_inner .right_side_contents .right_side_header_text p a:hover {
+  color: #0000ff;
+}
+section.main section.form .right_side_inner .right_side_contents .right_side_form_inner form {
+  display: flex;
+  flex-direction: column;
+  color: #00ffff;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 600;
+}
+section.main section.form .right_side_inner .right_side_contents .right_side_form_inner form .form_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 360px;
+  margin-left: 3rem;
+}
+section.main section.form .right_side_inner .right_side_contents .right_side_form_inner form .form_inner label span {
+  color: #ff0000;
+}
+section.main section.form .right_side_inner .right_side_contents .right_side_form_inner form .form_inner input {
+  border-radius: 100vmax;
+  height: 2.2rem;
+  margin-bottom: 0.6rem;
+  outline: none;
+  border: none;
+}
+section.main section.form .right_side_inner .right_side_contents .right_side_form_inner form .form_inner input::-moz-placeholder {
+  color: black;
+  padding-left: 0.5rem;
+  font-weight: 400;
+}
+section.main section.form .right_side_inner .right_side_contents .right_side_form_inner form .form_inner input:-ms-input-placeholder {
+  color: black;
+  padding-left: 0.5rem;
+  font-weight: 400;
+}
+section.main section.form .right_side_inner .right_side_contents .right_side_form_inner form .form_inner input::placeholder {
+  color: black;
+  padding-left: 0.5rem;
+  font-weight: 400;
+}
+section.main section.form .right_side_inner .right_side_contents .right_side_form_inner form .form_inner input:valid, section.main section.form .right_side_inner .right_side_contents .right_side_form_inner form .form_inner input:focus {
+  border: 1px solid #00ffff;
+}
+section.main section.form .right_side_inner .right_side_contents .right_side_form_inner form .fa {
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  color: black;
+  margin: 15.5rem 20rem;
+  z-index: 3;
+}
+section.main section.form .right_side_inner .right_side_contents .right_side_form_inner form button {
+  inset-block-start: 1rem;
+  width: 25rem;
+  height: 1.8rem;
+  border-radius: 100vmax;
+  background-color: #00ffff;
+  inset-inline-start: 2rem;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #000;
+}/*# sourceMappingURL=style.css.map */

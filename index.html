@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Volant-mail-register</title>
+</head>
+
+<body>
+    <section class="main">
+        <!-- FORM -->
+
+        <section class="form">
+            <div class="form_sec">
+                <div class="form_sec_inner">
+                    <div class="left_side">
+                        <div class="left_side_slider">
+                            <div class="slides">
+                                <input type="radio" name="radio-btn" id="radio1">
+                                <input type="radio" name="radio-btn" id="radio2">
+                                <input type="radio" name="radio-btn" id="radio3">
+                                <input type="radio" name="radio-btn" id="radio4">
+
+                                <div class="slide first">
+                                    <img src="./images/image1.jpg" alt="img">
+                                </div>
+                                <div class="slide">
+                                    <img src="./images/image2.jpg" alt="img">
+                                </div>
+                                <div class="slide">
+                                    <img src="./images/images3.jpg" alt="img">
+                                </div>
+                                <div class="slide">
+                                    <img src="./images/images4.jpg" alt="img">
+                                </div>
+
+                                <div class="navigation_auto">
+                                    <div class="auto-btn1"></div>
+                                    <div class="auto-btn2"></div>
+                                    <div class="auto-btn3"></div>
+                                    <div class="auto-btn4"></div>
+                                </div>
+
+                                <div class="navigation_manual">
+                                    <label for="radio1" class="manual-btn"></label>
+                                    <label for="radio2" class="manual-btn"></label>
+                                    <label for="radio3" class="manual-btn"></label>
+                                    <label for="radio4" class="manual-btn"></label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="right_side">
+                        <div class="right_side_inner">
+                            <div class="logo_sec">
+                                <div class="logo_sec_inner">
+                                    <div class="logo_img">
+                                        <img src="./images/logo2.png" alt="logo-img" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right_side_contents">
+                                <div class="right_side_header_text">
+                                    <p>Create an account or <a href="#">Login</a></p>
+                                </div>
+
+                                <div class="right_side_form">
+                                    <div class="right_side_form_inner">
+                                        <form action="">
+                                            <div class="form_inner">
+
+                                                <label for="email">Email <span>*</span></label>
+                                                <input type="email" name="email" required
+                                                    placeholder="example@gmail.com" />
+
+                                                <label for="first-name">First Name <span>*</span></label>
+                                                <input type="text" name="first-name" required />
+
+                                                <label for="last-name">Last Name <span>*</span></label>
+                                                <input type="text" name="last-name" required />
+
+                                                <label for="new-password">New Password <span>*</span></label>
+
+                                                <!-- ICON EYE FOR PASSWORD -->
+                                                <input type="password" name="new-password" required />
+                                                <i class="fa fa-eye" aria-hidden="true"></i>
+
+
+                                                <label for="time-zone">Time-Zone <span>*</span></label>
+                                                <input type="text" placeholder="DROP MENU..." name="language " />
+
+                                                <label for="language ">Language <span>*</span></label>
+                                                <input type="text" placeholder="DROP MENU..." name="language " />
+                                            </div>
+                                            <button>Register</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </section>
+
+    <script src="./reg.js"></script>
+</body>
+
+</html>
